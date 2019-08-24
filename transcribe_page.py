@@ -1,3 +1,15 @@
+import pandas as pd
+import numpy as np
+
+def charformat(df):    
+    charformat = []    
+    for index, row in df.iterrows():
+        char = row['Unicode']
+        x = row['X']
+        y = row['Y']
+        charformat.append((char, x, y))
+    return(charformat)
+
 def transcribe(chars, img_shape):
     # 'chars' in format [(unicode character, x, y), ...] in any order
     density = np.zeros(img_shape[1])
