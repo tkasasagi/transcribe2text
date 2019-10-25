@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 df_train = pd.read_csv('./data/train/train.csv')
 imagelist = df_train['Image'].tolist()
 
-image = '200021712-00034_1'
+image = '200021853-00034_1'
 
 dfs = df_train[df_train['Image'] == image]
 '''
